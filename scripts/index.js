@@ -79,8 +79,10 @@ function isValid(newTask){
     let valid=true;
     if(newTask.title.length==0){
         valid=false;
+        $("#txtTitle").addClass("error");
     }
     else{
+        $("input").removeClass("error");
         return valid; 
     }
 }

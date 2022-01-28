@@ -1,171 +1,204 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-html, body{
-    margin: 0; 
-    padding: 0; 
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
+
 /* header section */
-.header{
-    position: relative; 
-    width: 100%; 
+.header {
+    position: relative;
+    width: 100%;
     /* height: 100vh; good to use for whole page mp4 background */
-    height: 300px; 
-    display: flex; 
-    align-items: center; 
+    height: 300px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    overflow: hidden; 
+    overflow: hidden;
     margin-bottom: 15px;
 }
-.video-container{
-    position: absolute; 
-    top: 0; 
-    left: 0; 
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
 }
-.color-overlay{
-    position: absolute; 
-    top: 0; 
-    left: 0; 
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: rgb(112, 184, 112);
-    width: 100%; 
-    height: 100vh; 
-    opacity: .2; 
+    width: 100%;
+    height: 100vh;
+    opacity: .2;
 }
-body{
+
+body {
     background-color: #2836189d;
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
 }
-h5{
+
+h5 {
     z-index: 1;
-    opacity: .7; 
+    opacity: .7;
     text-transform: uppercase;
-    color: white; 
+    color: white;
 }
-h1{
+
+h1 {
     font-size: 6rem;
     margin-top: 10px;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    z-index: 1; 
-    opacity: .7; 
+    z-index: 1;
+    opacity: .7;
     font-family: 'Birthstone Bounce', cursive;
-} 
-.calendar{
+}
+
+.calendar {
     margin-bottom: 40px;
 }
-.calendar img{
+
+.calendar img {
     max-height: 500px;
-    border: 2px solid black; 
+    border: 2px solid black;
     box-shadow: 0px 0px 7px 0px #000000;
-}  
-.cal-btn{
+}
+
+.cal-btn {
     max-height: 20px;
     font-size: 10px;
     padding-top: 0%;
     font-weight: 600;
     letter-spacing: 1px;
 }
+
 /* main section */
-main{
+main {
     display: flex;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
-section{
-    flex: 2; 
+
+section {
+    flex: 2;
     /* the flex will automatically take from display:flex; */
-    margin: 5; 
+    margin: 5;
 }
-.task-container{
+.delete{
+    margin: 2%;
+}
+
+.task-container {
     margin-left: 5%;
     margin-right: 4%;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
-.task{
-    display:flex; 
+.task {
+    display: flex;
     border: 1px solid #1a240b;
-    color:white;
-    margin-top: 2%; 
-    box-shadow: 0px 0px 7px 0px #000000; 
+    color: white;
+    margin-top: 2%;
+    box-shadow: 0px 0px 7px 0px #000000;
 }
-.task .task-title{
-    flex: 2; 
+.task .task-title {
+    flex: 2;
 }
-.task .task-middle{
-    flex: 1; 
+.task .task-middle {
+    flex: 1;
     background-color: rgba(0, 0, 0, 0.75);
-    color:white;
-    
+    color: white;
+
 }
-aside{
-    flex: 1; 
-    background-color: rgba(0, 0, 0, 0.75);
-    margin: 5px;     
-    color: white; 
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    box-shadow: 0px 0px 7px 0px #000000; 
-}
-.bttn{
+.bttn {
     background-color: black;
     border: 2px solid black;
-    border-radius: 0; 
+    border-radius: 0;
     text-transform: uppercase;
-    color: white; 
+    color: white;
 }
-.bttn:hover{
+.bttn:hover {
     background-color: #78290F;
     border: 2px solid rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 7px 0px #000000;
 }
+.delete:hover{
+    background-color: red;
+    transform:scale(1.07);
+}
+.important{
+    border: 2px solid rgb(165, 0, 0); 
+}
 /* form */
-.form-control{
-    margin-bottom: 5px; 
+aside {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 2%;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 7px 0px #000000;
+}
+.form-control {
+    margin-bottom: 5px;
     max-width: 90%;
     margin-left: 5%;
     border-radius: 0;
 }
-.saveBtn{
-    margin-top: 15px; 
-    margin-bottom: 10px; 
+
+.saveBtn {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
-.iImportant{
-    cursor: pointer; 
+
+.iImportant {
+    cursor: pointer;
     font-size: 25px;
 }
-.iImportant.fas{
-    color: red; 
+
+.iImportant.fas {
+    color: red;
+}
+.error{
+    border: 2px solid red; 
 }
 /* footer */
-.footer{
-    width: 100%; 
+.footer {
+    width: 100%;
     height: 150px;
     overflow: hidden;
     position: relative;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
 }
-.trees{
+
+.trees {
     margin-bottom: 400px;
     zoom: .3;
     width: 100%;
 }
-.ft-overlay{
-    position: absolute; 
+
+.ft-overlay {
+    position: absolute;
     background-color: rgb(112, 184, 112);
-    width: 100%; 
-    opacity: .7; 
+    width: 100%;
+    opacity: .7;
 }
-.ft-words{
+
+.ft-words {
     z-index: 1;
     position: absolute;
     color: white;
-    opacity: .7; 
+    opacity: .7;
     text-transform: uppercase;
 
 }
-.ft-icons{
-    display: flex;  
+
+.ft-icons {
+    display: flex;
     justify-content: space-between;
 }
