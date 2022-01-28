@@ -7,6 +7,8 @@ class Task{
         this.description=description;
         this.participants=participants;
         this.color=color;
+
+        this.name="Green-Key";
     }
 }
 
